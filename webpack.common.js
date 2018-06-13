@@ -14,7 +14,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'todolist',
+      title: 'filter',
       template: './src/index.pug'
     })
   ],
