@@ -5,17 +5,20 @@ import { withStyles } from '@material-ui/core/styles';
 
 import SearchIcon from './icons/Search';
 
+import './SearchBar.css';
+
 const styles = () => ({
   root: { width: 388 }
 });
 
 const SearchBar = ({ classes, placeholder }) => (
   <TextField
+    id="searchbar"
     className={classes.root}
     InputProps={{
       startAdornment: (
         <InputAdornment position="start">
-          <SearchIcon />
+          <SearchIcon color="#fff" />
         </InputAdornment>
       )
     }}

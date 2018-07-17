@@ -4,8 +4,8 @@ import Chip from '@material-ui/core/es/Chip';
 import { withStyles } from '@material-ui/core/es/styles';
 
 import MediaCard from './MediaCard';
+import Pager from './Pager';
 
-import fakePager from '../assets/fake-pager.png';
 import image01 from '../assets/allef-vinicius-253985-unsplash.jpg';
 import image02 from '../assets/yiran-ding-572142-unsplash.jpg';
 
@@ -43,14 +43,22 @@ const Main = ({ classes }) => (
       src={image01}
       title="Kogi Cosby sweater."
       content="Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo."
+      author="Ethan Foster"
+      categories="Entertainment"
+      location="Kaohsiung City"
+      period="2018/5/24 - 2018/5/31"
     />
     <MediaCard
       src={image02}
       title="In the tumultuous busin."
       content="Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo."
+      author="Herman Cobb"
+      categories="Entertainment"
+      location="Kaohsiung City"
+      period="2018/5/24 - 2018/5/31"
     />
     <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-      <img src={fakePager} alt="fake pager" width="75%" height="75%" />
+      <Pager total={5} current={1} />
     </div>
   </main>
 );

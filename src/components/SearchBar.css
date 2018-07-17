@@ -1,0 +1,8 @@
+#searchbar {
+  color: #fff;
+}
+
+#searchbar::placeholder {
+  color: #fff;
+  font-style: italic;
+}
